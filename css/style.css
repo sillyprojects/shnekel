@@ -1,0 +1,86 @@
+/* containers */
+body {text-align:center; margin:0; padding:0}
+#main {font-family:"Arial", sans-serif; background:#101720; text-align:left; color:#b0b7c0}
+#wrapper {width:100%; width:100%; margin:0 auto;}
+
+/* styles */
+#toggle-help, a {color:#ba0; text-decoration:none; cursor:pointer}
+#toggle-help:hover, a:hover {color:#fe0; text-decoration:underline}
+
+/* header */
+#header {background:#1a1f2a; margin:0; padding:30px 0; border-bottom:1px solid #303740; overflow:hidden; line-height:50px}
+#header h1 {width:930px; margin:0 auto; font-size:40px; background: url("../img/shnekel.png") no-repeat left; padding-left:60px; font-weight:normal}
+#header h1 span.description {display:block; font-size:16px; line-height:28px}
+
+/* footer */
+#footer {margin-top:40px; padding-top:30px; text-align:center; font-size:14px}
+#footer p {margin:0 0 10px;}
+
+/* help */
+#help {display:none; overflow:hidden; background:#0a0f1a; border-bottom:1px solid #303740; padding:20px 0}
+#help ul {float:left; width:25%; margin:0 40px; padding:0}
+#help ul h3 {font-size:22px; color:#fff; font-weight:lighter; font-family:sans-serif; margin:0 0 20px; border-bottom:1px solid #303740; padding:0 0 20px}
+#help ul li {font-size:14px; line-height:17px; list-style:none; margin:0 0 20px}
+
+/* chart */
+.chart {overflow:hidden; margin:20px auto; max-width:980px}
+
+/* entry structure */
+.entry {float:left; width:300px; margin:0; padding:10px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px}
+.entry:hover {background:#202730}
+.entry:hover .currency-code {color:#a0a7b0}
+.entry .data > div {font-size:12px;}
+.entry .meta {float:right; text-align:right;}
+.entry .summary {overflow:hidden}
+.entry .summary .thumbnail {float:left; margin:7px 20px 0 0}
+.entry .summary .name {font-size:12px}
+.entry .summary .currency-rate {font-size:12px}
+.entry .currency-code {float:left; width:130px; line-height:60px; font-size:60px; font-weight:lighter; font-family:sans-serif; letter-spacing:-3px; color:#303740; text-transform:uppercase}
+.entry .no-change {color:#5b5b5b}
+.entry .positive {color:#84e770}
+.entry .negative {color:#e77070}
+.entry .no-change:before {content:"▶"; margin-right:4px}
+.entry .positive:before {content:"▲"}
+.entry .negative:before {content:"▼"}
+.entry .exchange-rate {font-size:22px; text-align:right; letter-spacing:-1px; color:#fff; font-weight:lighter; font-family:sans-serif; padding:0 2px 0 0}
+.entry .change-rate {font-size:12px}
+.entry .change-rate:after {content:"%"}
+
+/* flags */
+.thumbnail.flag {width: 70px; height: 50px; background:#444 url("../img/flags.png") no-repeat}
+.aud .thumbnail.flag {background-position:0 0}       /* Australia */
+.cad .thumbnail.flag {background-position:0 -50px}   /* Canada */
+.dkk .thumbnail.flag {background-position:0 -100px}  /* Denmark */
+.egp .thumbnail.flag {background-position:0 -150px}  /* Egypt */
+.usd .thumbnail.flag {background-position:0 -200px}  /* United States */
+.gbp .thumbnail.flag {background-position:0 -250px}  /* United Kingdom */
+.sek .thumbnail.flag {background-position:0 -300px}  /* Sweden */
+.zar .thumbnail.flag {background-position:0 -350px}  /* South Africa */
+.nok .thumbnail.flag {background-position:0 -400px}  /* Norway */
+.lbp .thumbnail.flag {background-position:0 -450px}  /* Lebanon */
+.jod .thumbnail.flag {background-position:0 -500px}  /* Jordan */
+.jpy .thumbnail.flag {background-position:0 -550px}  /* Japan */
+.ils .thumbnail.flag {background-position:0 -600px}  /* Israel */
+.eur .thumbnail.flag {background-position:0 -650px}  /* European Union */
+.chf .thumbnail.flag {background-position:0 -700px}  /* Swiss */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+body { background:red; width:100%}
+  #wrapper {width:100%; margin: 0 auto;}
+  #header {}
+  #header {background:#1a1f2a url("../img/shnekel.png") repeat-x bottom; width:100%; padding:100px 0; margin:0 border-bottom:1px solid #303740; overflow:hidden; line-height:50px}
+  #header h1 {font-size:80px; line-height:80px; background:none; padding:0; text-align:center; width:60%}
+  #header h1 span {font-size:40px; margin:40px 0 0; line-height:50px}
+  .entry {width:100%; padding:20px 0; border-bottom:1px solid #303740; position:relative}
+  .entry .summary {padding:40px}
+  .entry .flag,
+  .entry .summary .name {display:none}
+  .entry .summary .currency-code {font-size:160px; line-height:160px}
+  .entry .summary .currency-rate {font-size:22px}
+  .entry .exchange-rate {font-size:100px}
+  .entry .change-rate {font-size:40px}
+}
